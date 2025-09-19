@@ -1,4 +1,5 @@
-<img width="1280" height="720" alt="AGENTICA AI" src="https://github.com/user-attachments/assets/b5715b59-1527-47f2-a70c-bf02962e1418" />
+
+<img width="1280" height="720" alt="AGENTICA AI" src="https://github.com/user-attachments/assets/b3599d81-c2d1-4a82-b1f8-46f4c0850193" />
 
 # Agent Marketplace: Revolutionizing AI Access
 
@@ -90,10 +91,11 @@ We welcome contributions from developers, researchers, and enthusiasts.
 ---
 
 ## Contact
-- **Website:** [https://www.google.com/search?q=YourWebsite.com](https://www.google.com/search?q=YourWebsite.com)  
-- **Email:** your-email@example.com  
-- **Social Media:** Your preferred handle or links
+- **Website:** [Portfolio](https://saif-ur-rasool-278mid8.gamma.site/)  
+- **Email:** bc240428331sur@vu.edu.pk
+- **Social Media:** [linktree](https://linktr.ee/Saif_Ur_Rasool)
 
 ---
-
-© 2025 Agent Marketplace. All rights reserved.
+<div align='center'>
+<p>© 2025 Agent Marketplace. All rights reserved.</p>
+</div>
