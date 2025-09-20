@@ -148,6 +148,285 @@ We welcome contributions from developers, researchers, and enthusiasts.
 <video src="https://github.com/user-attachments/assets/f630a18d-f263-4874-851b-bf63df3add16" controls width="600" style="max-width: 100%;" autoplay>
   Your browser does not support the video tag.
 </video>
+
+## Repo Structure
+
+<div align='left'>
+
+```
+├── LICENSE.md
+├── MultiAgent-Quickstart-main
+    ├── .gitmodules
+    ├── README.md
+    ├── agents
+    │   ├── firecrawl
+    │   │   ├── .dockerignore
+    │   │   ├── .env_sample
+    │   │   ├── .github
+    │   │   │   └── workflows
+    │   │   │   │   └── docker-image.yml
+    │   │   ├── .gitignore
+    │   │   ├── Dockerfile
+    │   │   ├── README.md
+    │   │   ├── main.py
+    │   │   ├── pyproject.toml
+    │   │   └── run_agent.sh
+    │   ├── github
+    │   │   ├── .dockerignore
+    │   │   ├── .env_sample
+    │   │   ├── .github
+    │   │   │   └── workflows
+    │   │   │   │   └── docker-image.yml
+    │   │   ├── .gitignore
+    │   │   ├── Dockerfile
+    │   │   ├── README.md
+    │   │   ├── main.py
+    │   │   ├── pyproject.toml
+    │   │   └── run_agent.sh
+    │   └── interface
+    │   │   ├── .dockerignore
+    │   │   ├── .env_sample
+    │   │   ├── .github
+    │   │       └── workflows
+    │   │       │   └── docker-image.yml
+    │   │   ├── .gitignore
+    │   │   ├── Dockerfile
+    │   │   ├── README.md
+    │   │   ├── install.sh
+    │   │   ├── main.py
+    │   │   ├── pyproject.toml
+    │   │   ├── requirements.txt
+    │   │   ├── run_agent.sh
+    │   │   └── test.py
+    ├── application.yaml
+    ├── coral-server
+    │   ├── .dockerignore
+    │   ├── .github
+    │   │   └── workflows
+    │   │   │   ├── docker.yml
+    │   │   │   └── trufflehog.yml
+    │   ├── .gitignore
+    │   ├── .idea
+    │   │   ├── .gitignore
+    │   │   ├── kotlinc.xml
+    │   │   ├── material_theme_project_new.xml
+    │   │   └── vcs.xml
+    │   ├── CONTRIBUTING.md
+    │   ├── Dockerfile
+    │   ├── README.md
+    │   ├── build.gradle.kts
+    │   ├── examples
+    │   │   ├── camel-resources
+    │   │   │   └── camel-interface-resource.py
+    │   │   ├── camel-search-maths
+    │   │   │   ├── README.md
+    │   │   │   ├── config.py
+    │   │   │   ├── mcp_example_camel_interface.py
+    │   │   │   ├── mcp_example_camel_math.py
+    │   │   │   ├── mcp_example_camel_search.py
+    │   │   │   ├── prompts.py
+    │   │   │   ├── requirements.txt
+    │   │   │   ├── tools.py
+    │   │   │   └── venv.sh
+    │   │   └── session-posts
+    │   │   │   ├── Local docker session.http
+    │   │   │   └── application.yaml
+    │   ├── gradle.properties
+    │   ├── gradle
+    │   │   └── wrapper
+    │   │   │   ├── gradle-wrapper.jar
+    │   │   │   └── gradle-wrapper.properties
+    │   ├── gradlew
+    │   ├── gradlew.bat
+    │   ├── images
+    │   │   └── thumnail2.png
+    │   ├── settings.gradle.kts
+    │   └── src
+    │   │   ├── main
+    │   │       ├── kotlin
+    │   │       │   └── org
+    │   │       │   │   └── coralprotocol
+    │   │       │   │       └── coralserver
+    │   │       │   │           ├── EventBus.kt
+    │   │       │   │           ├── IterHelpers.kt
+    │   │       │   │           ├── Main.kt
+    │   │       │   │           ├── config
+    │   │       │   │               ├── AppConfig.kt
+    │   │       │   │               └── ConfigLoader.kt
+    │   │       │   │           ├── debug
+    │   │       │   │               └── DebugRoutes.kt
+    │   │       │   │           ├── mcpresources
+    │   │       │   │               └── MessageResource.kt
+    │   │       │   │           ├── mcptools
+    │   │       │   │               ├── AddParticipantTool.kt
+    │   │       │   │               ├── CloseThreadTool.kt
+    │   │       │   │               ├── CreateThreadTool.kt
+    │   │       │   │               ├── ListAgentsTool.kt
+    │   │       │   │               ├── RemoveParticipantTool.kt
+    │   │       │   │               ├── SendMessageTool.kt
+    │   │       │   │               ├── ThreadInputModels.kt
+    │   │       │   │               ├── ThreadToolsRegistry.kt
+    │   │       │   │               └── WaitForMentionsTool.kt
+    │   │       │   │           ├── models
+    │   │       │   │               ├── Agent.kt
+    │   │       │   │               ├── Message.kt
+    │   │       │   │               ├── ResolvedMessage.kt
+    │   │       │   │               └── Thread.kt
+    │   │       │   │           ├── orchestrator
+    │   │       │   │               ├── AgentRegistry.kt
+    │   │       │   │               ├── ConfigEntry.kt
+    │   │       │   │               ├── ConfigValue.kt
+    │   │       │   │               ├── Orchestrator.kt
+    │   │       │   │               ├── RegistryAgent.kt
+    │   │       │   │               └── runtime
+    │   │       │   │               │   ├── AgentRuntime.kt
+    │   │       │   │               │   ├── CoralOrchestratedEnvs.kt
+    │   │       │   │               │   ├── Docker.kt
+    │   │       │   │               │   ├── Executable.kt
+    │   │       │   │               │   └── executable
+    │   │       │   │               │       └── EnvVar.kt
+    │   │       │   │           ├── routes
+    │   │       │   │               ├── MessageRoutes.kt
+    │   │       │   │               ├── PublicRoutes.kt
+    │   │       │   │               ├── SessionRoutes.kt
+    │   │       │   │               └── SseRoutes.kt
+    │   │       │   │           ├── server
+    │   │       │   │               ├── CoralAgentIndividualMcp.kt
+    │   │       │   │               ├── CoralServer.kt
+    │   │       │   │               ├── RouteException.kt
+    │   │       │   │               └── StdioServer.kt
+    │   │       │   │           └── session
+    │   │       │   │               ├── AgentGraph.kt
+    │   │       │   │               ├── CoralAgentGraphSession.kt
+    │   │       │   │               ├── CountBasedScheduler.kt
+    │   │       │   │               ├── Event.kt
+    │   │       │   │               ├── GroupScheduler.kt
+    │   │       │   │               ├── SessionManager.kt
+    │   │       │   │               └── SessionModels.kt
+    │   │       └── resources
+    │   │       │   └── application.yaml
+    │   │   └── test
+    │   │       └── kotlin
+    │   │           └── org
+    │   │               └── coralprotocol
+    │   │                   └── coralserver
+    │   │                       ├── e2e
+    │   │                           ├── E2EResourceTest.kt
+    │   │                           └── TestAgentUtils.kt
+    │   │                       └── session
+    │   │                           ├── SessionManagerTest.kt
+    │   │                           └── SessionTest.kt
+    ├── images
+    │   ├── add-a-server.png
+    │   ├── add-custom-tools.png
+    │   ├── agent-groups.png
+    │   ├── app-priv.png
+    │   ├── new-agent.png
+    │   ├── new-group-button.png
+    │   ├── select-session.png
+    │   ├── server-selector.png
+    │   └── user-input.png
+    └── run_agent.sh
+├── README.md
+└── shadcn-ui
+    ├── .gitignore
+    ├── .mgx
+        └── config.yaml
+    ├── README.md
+    ├── components.json
+    ├── eslint.config.js
+    ├── index.html
+    ├── package.json
+    ├── pnpm-lock.yaml
+    ├── postcss.config.js
+    ├── public
+        ├── favicon.svg
+        ├── robots.txt
+        └── text-1.png
+    ├── src
+        ├── App.css
+        ├── App.tsx
+        ├── components
+        │   ├── AgentCard.tsx
+        │   ├── AgentGrid.tsx
+        │   ├── CategorySection.tsx
+        │   ├── CoreFeatures.tsx
+        │   ├── Footer.tsx
+        │   ├── Header.tsx
+        │   ├── HeroSection.tsx
+        │   ├── StatsSection.tsx
+        │   └── ui
+        │   │   ├── accordion.tsx
+        │   │   ├── alert-dialog.tsx
+        │   │   ├── alert.tsx
+        │   │   ├── aspect-ratio.tsx
+        │   │   ├── avatar.tsx
+        │   │   ├── badge.tsx
+        │   │   ├── breadcrumb.tsx
+        │   │   ├── button.tsx
+        │   │   ├── calendar.tsx
+        │   │   ├── card.tsx
+        │   │   ├── carousel.tsx
+        │   │   ├── chart.tsx
+        │   │   ├── checkbox.tsx
+        │   │   ├── collapsible.tsx
+        │   │   ├── command.tsx
+        │   │   ├── context-menu.tsx
+        │   │   ├── dialog.tsx
+        │   │   ├── drawer.tsx
+        │   │   ├── dropdown-menu.tsx
+        │   │   ├── form.tsx
+        │   │   ├── hover-card.tsx
+        │   │   ├── input-otp.tsx
+        │   │   ├── input.tsx
+        │   │   ├── label.tsx
+        │   │   ├── menubar.tsx
+        │   │   ├── navigation-menu.tsx
+        │   │   ├── pagination.tsx
+        │   │   ├── popover.tsx
+        │   │   ├── progress.tsx
+        │   │   ├── radio-group.tsx
+        │   │   ├── resizable.tsx
+        │   │   ├── scroll-area.tsx
+        │   │   ├── select.tsx
+        │   │   ├── separator.tsx
+        │   │   ├── sheet.tsx
+        │   │   ├── sidebar.tsx
+        │   │   ├── skeleton.tsx
+        │   │   ├── slider.tsx
+        │   │   ├── sonner.tsx
+        │   │   ├── switch.tsx
+        │   │   ├── table.tsx
+        │   │   ├── tabs.tsx
+        │   │   ├── textarea.tsx
+        │   │   ├── toast.tsx
+        │   │   ├── toaster.tsx
+        │   │   ├── toggle-group.tsx
+        │   │   ├── toggle.tsx
+        │   │   ├── tooltip.tsx
+        │   │   └── use-toast.ts
+        ├── hooks
+        │   ├── use-mobile.tsx
+        │   └── use-toast.ts
+        ├── index.css
+        ├── lib
+        │   └── utils.ts
+        ├── main.tsx
+        ├── pages
+        │   ├── Index.tsx
+        │   └── NotFound.tsx
+        └── vite-env.d.ts
+    ├── tailwind.config.ts
+    ├── template_config.json
+    ├── todo.md
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json
+    └── vite.config.ts
+```
+
+</div>
+
 <div align='center'>
 <h3>© 2025 Agent Marketplace. All rights reserved.</h3>
 </div>
