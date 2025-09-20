@@ -102,6 +102,39 @@ We welcome contributions from developers, researchers, and enthusiasts.
 - **Social Media:** [linktree](https://linktr.ee/Saif_Ur_Rasool)
 
 ---
+<div align="center">
+
+  <h1><u>Our Team</u></h1>
+
+  <table>
+    <tr>
+      <td>
+        <a href="https://github.com/SaifRasool92">
+          <img src="https://avatars.githubusercontent.com/u/170190067?v=4" width="100" alt="Saif Ur Rasool"/><br>
+          <sub><b>Saif Ur Rasool</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/Meharzain2010">
+          <img src="https://avatars.githubusercontent.com/u/194600882?s=400" width="100" alt="Zia Ur Rehman"/><br>
+          <sub><b>Muhammad Azeem</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/arhamansari11">
+          <img src="https://avatars.githubusercontent.com/u/124850772?v=4" width="100" alt="Muhammad Arham"/><br>
+          <sub><b>Muhammad Arham</b></sub>
+        </a>
+      </td>
+      <td>
+        <a href="https://github.com/Anniee08">
+          <img src="https://avatars.githubusercontent.com/u/200658190?v=4" width="100" alt="Qurat Ul Ain"/><br>
+          <sub><b>Qurat Ul Ain</b></sub>
+        </a>
+      </td>
+    </tr>
+  </table>
+
 <div align='center'>
 <p>© 2025 Agent Marketplace. All rights reserved.</p>
 </div>
