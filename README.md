@@ -132,14 +132,23 @@ We welcome contributions from developers, researchers, and enthusiasts.
           <sub><b>Qurat Ul Ain</b></sub>
         </a>
       </td>
+      <td>
+        <a href="https://github.com/Afeefa-Batool">
+          <img src="https://avatars.githubusercontent.com/u/99643705?v=4" width="100" alt="Afeefa Batool"/><br>
+          <sub><b>Qurat Ul Ain</b></sub>
+        </a>
+      </td>
     </tr>
   </table>
 
-<div align='center'>
-<p>© 2025 Agent Marketplace. All rights reserved.</p>
-</div>
+
 
 ## Video Demo
 
-https://github.com/user-attachments/assets/f630a18d-f263-4874-851b-bf63df3add16
+<video src="https://github.com/user-attachments/assets/f630a18d-f263-4874-851b-bf63df3add16" controls width="600" style="max-width: 100%;" autoplay>
+  Your browser does not support the video tag.
+</video>
+<div align='center'>
+<h3>© 2025 Agent Marketplace. All rights reserved.</h3>
+</div>
 
