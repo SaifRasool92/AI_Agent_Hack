@@ -79,4 +79,4 @@ The core of our platform is the Agents themselves. If you are developing a new a
 
 ## 7. Legal Notice
 
-By submitting a Pull Request, you assert that you are the original author of the code or have the right to contribute the code under the project’s [LICENSE.md](LICENSE.md). All contributions will be licensed under the project's chosen license.
+By submitting a Pull Request, you assert that you are the original author of the code or have the right to contribute the code under the project’s [LICENSE.md](https://github.com/SaifRasool92/AI_Agent_Hack?tab=MIT-1-ov-file). All contributions will be licensed under the project's chosen license.
